@@ -1,0 +1,54 @@
+body {
+    margin: 0; padding: 5em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: #b3c6ff;
+}
+
+#wave {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#letT {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+#letR {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+#letA {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#letX {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+}
