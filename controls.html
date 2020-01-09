@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Trax</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100%; }
+		</style>
+	</head>
+	<body>
+		<!--  Importing files -->
+		<script src="three.js"></script>
+		<script src="OrbitControls.js"></script>
+		<script src="OBJLoader.js"></script>
+		<script src="MTLLoader.js"></script>
+		<script>
+
+			// Creating scene and camera //
+      var scene = new THREE.Scene();
+    	var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+			camera.position.z = 100;
+
+	 		// Creating renderer //
+			var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
+			renderer.setClearColor("#DDDDDD");
+    	renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+
+			// Allowing window to properly resize //
+			window.addEventListener( 'resize', function() {
+				var width = window.innerWidth;
+				var height = window.innerHeight;
+				renderer.setSize(width, height);
+				camera.aspect = width / height;
+				camera.updateProjectionMatrix();
+			});
+
+			// Allowing interation with object //
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+			// Creating light source //
+			var light = new THREE.PointLight(0xFFFFFF, 1.4, 1000);
+			light.position.set(0,15,15);
+			scene.add(light);
+
+			// Creating variable for object //
+			var theObj;
+
+			// Loading the object's textures //
+			var mtlLoader = new THREE.MTLLoader();
+			mtlLoader.load('railroad.mtl', function (materials) {
+				materials.preload();
+
+				// Loading the object's geometries //
+				var objLoader = new THREE.OBJLoader();
+				objLoader.setMaterials(materials);
+				objLoader.load('railroad.obj', function(object) {
+					scene.add(object);
+					theObj = object;
+
+					//object.position.z = -1;
+					//object.position.x = 1;
+
+				});
+			});
+
+			// Rendering scene //
+			var render = function() {
+				requestAnimationFrame(render);
+				renderer.render(scene, camera);
+			}
+
+			render();
+
+		</script>
+	</body>
+</html>

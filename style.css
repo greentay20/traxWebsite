@@ -105,16 +105,16 @@ body {
 .button {
   background-color: #b3c6ff;
   color: white;
-  position: absolute;
-  padding: 20px 75px;
+  position: fixed;
+  padding: 20px 40px;
   top: 75%;
   left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid white;
   border-radius: 40px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
   display: block;
-  margin: 0 auto;
   cursor: pointer;
 }
