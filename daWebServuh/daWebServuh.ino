@@ -153,7 +153,27 @@ void wifi() {
               Serial.println("GPIO 4 off");
               output4State = "off";
               digitalWrite(output4, LOW);
-            } */
+            } 
+            
+            // Display current state, and ON/OFF buttons for GPIO 5  
+            client.println("<p>Servo - State " + output5State + "</p>");
+            // If the output5State is off, it displays the ON button       
+            if (output5State=="off") {
+              client.println("<p><a href=\"/Servo/on\"><button class=\"button\">ON</button></a></p>");
+            } else {
+              client.println("<p><a href=\"/Servo/off\"><button class=\"button button2\">OFF</button></a></p>");
+            } 
+
+            /* Display current state, and ON/OFF buttons for GPIO 4  
+            client.println("<p>GPIO 4 - State " + output4State + "</p>");
+            // If the output4State is off, it displays the ON button       
+            if (output4State=="off") {
+              client.println("<p><a href=\"/4/on\"><button class=\"button\">LEFT</button></a></p>");
+            } else {
+              client.println("<p><a href=\"/4/off\"><button class=\"button button2\">RIGHT</button></a></p>");
+            }
+            
+            */
 
             // Display the HTML web page
             client.println("<!DOCTYPE html>");
