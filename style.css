@@ -121,7 +121,7 @@ body {
 
 switch1 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 10%;
 	left: 25%;
 	text-align: center;
@@ -130,7 +130,7 @@ switch1 {
 
 switch2 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 10%;
 	left: 75%;
 	text-align: center;
@@ -139,7 +139,7 @@ switch2 {
 
 switch3 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 20%;
 	left: 25%;
 	text-align: center;
@@ -148,7 +148,7 @@ switch3 {
 
 switch4 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 20%;
 	left: 75%;
 	text-align: center;
@@ -157,7 +157,7 @@ switch4 {
 
 switch5 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 30%;
 	left: 25%;
 	text-align: center;
@@ -166,7 +166,7 @@ switch5 {
 
 switch6 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 30%;
 	left: 75%;
 	text-align: center;
@@ -175,7 +175,7 @@ switch6 {
 
 switch7 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 40%;
 	left: 25%;
 	text-align: center;
@@ -184,7 +184,7 @@ switch7 {
 
 switch8 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 40%;
 	left: 75%;
 	text-align: center;
@@ -193,7 +193,7 @@ switch8 {
 
 switch9 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 50%;
 	left: 25%;
 	text-align: center;
@@ -202,7 +202,7 @@ switch9 {
 
 switch10 {
 	position: absolute;
-	padding: 20px 40px;
+	
 	top: 50%;
 	left: 75%;
 	text-align: center;
