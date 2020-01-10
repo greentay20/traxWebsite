@@ -118,3 +118,93 @@ body {
   display: block;
   cursor: pointer;
 }
+
+switch1 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 10%;
+	left: 25%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch2 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 10%;
+	left: 75%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch3 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 20%;
+	left: 25%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch4 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 20%;
+	left: 75%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch5 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 30%;
+	left: 25%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch6 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 30%;
+	left: 75%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch7 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 40%;
+	left: 25%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch8 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 40%;
+	left: 75%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch9 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 50%;
+	left: 25%;
+	text-align: center;
+	font-size: 24px;
+}
+
+switch10 {
+	position: absolute;
+	padding: 20px 40px;
+	top: 50%;
+	left: 75%;
+	text-align: center;
+	font-size: 24px;
+}
